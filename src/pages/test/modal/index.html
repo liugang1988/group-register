@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="import" href="../../../components/head/index.tpl?__inline">
+</head>
+<body>
+    <div id="app">
+        <ui-modal
+            :visible="visible"
+            :title="title"
+            :type="type"
+            @ok="onOk"
+            @cancel="onCancel">
+            {{content}}
+        </ui-modal>
+
+        <button @click="alert">alert</button>
+        <button @click="confirm">confirm</button>
+    </div>
+
+    <script>
+        require('main.js');
+    </script>
+</body>
+</html>

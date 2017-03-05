@@ -1,0 +1,29 @@
+/**
+ * 表格
+ */
+
+@import "variable";
+@import "mixin";
+.m-table {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        padding: 1em .5em;
+        text-align: center;
+        word-break: break-all;
+    }
+    thead {
+        td {
+            color: @color-gray4;
+            background-color: lighten(@color-gray2, 8.5%);
+            font-weight: bold;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px dashed @color-gray4;
+        }
+    }
+}

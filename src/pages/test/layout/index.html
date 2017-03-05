@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="import" href="../../../components/head/index.tpl?__inline">
+</head>
+<body>
+    <div id="app">
+        <div class="g-in">
+            <h1>网格布局</h1>
+            <div class="demo">
+                <p>基础用法</p>
+                <div class="g-row">
+                    <div class="g-col g-col-span-6">span-6</div>
+                    <div class="g-col g-col-span-6">span-6</div>
+                    <div class="g-col g-col-span-6">span-6</div>
+                    <div class="g-col g-col-span-6">span-6</div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col g-col-span-8">span-8</div>
+                    <div class="g-col g-col-span-10">span-10</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-2">span-2</div>
+                </div>
+                <p>区块间隔 </p>
+                <div class="g-row">
+                    <div class="g-col g-col-span-6">span-6</div>
+                    <div class="g-col g-col-span-6">span-6</div>
+                    <div class="g-col g-col-span-6">span-6</div>
+                    <div class="g-col g-col-span-6">span-6</div>
+                </div>
+                <p>左偏移</p>
+                <div class="g-row">
+                    <div class="g-col g-col-span-6">span-6</div>
+                    <div class="g-col g-col-span-6 g-col-offset-6">span-6 offset-6</div>
+                    <div class="g-col g-col-span-6">span-6</div>
+                </div>
+                <p>栅格排序</p>
+                <div class="g-row">
+                    <div class="g-col g-col-span-18 g-col-push-6">span-18 push-6</div>
+                    <div class="g-col g-col-span-6 g-col-pull-18">span-6 pull-18</div>
+                </div>
+                <p>Flex水平布局</p>
+                <p>向左分布（默认）</p>
+                <div class="g-row g-row-flex">
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                </div>
+                <p>居中分布</p>
+                <div class="g-row g-row-flex g-row-flex-center">
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                </div>
+                <p>向右分布</p>
+                <div class="g-row g-row-flex g-row-flex-end">
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                </div>
+                <p>两端分布</p>
+                <div class="g-row g-row-flex g-row-flex-space-between">
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                </div>
+                <p>均匀分布</p>
+                <div class="g-row g-row-flex g-row-flex-space-around">
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                </div>
+                <p>Flex垂直布局</p>
+                <p>布满容器（默认）</p>
+                <div class="g-row g-row-flex g-row-flex-strech">
+                    <div class="g-col g-col-span-4">span-4
+                        <br>span-4
+                        <br>
+                    </div>
+                    <div class="g-col g-col-span-4">span-4<br>span-4
+                        <br><br>span-4
+                        <br></div>
+                    <div class="g-col g-col-span-4">span-4</div>
+                    <div class="g-col g-col-span-4">span-4<br>span-4
+                        <br><br>span-4
+                        <br><br>span-4
+                        <br></div>
+                </div>
+                <p>顶部排列</p>
+                <div class="g-row g-row-flex g-row-flex-top">
+                    <div class="g-col g-col-span-4" style="height: 80px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 100px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 90px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 110px;">span-4</div>
+                </div>
+                <p>居中分布</p>
+                <div class="g-row g-row-flex g-row-flex-middle">
+                    <div class="g-col g-col-span-4" style="height: 80px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 100px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 90px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 110px;">span-4</div>
+                </div>
+                <p>底部排列</p>
+                <div class="g-row g-row-flex g-row-flex-bottom">
+                    <div class="g-col g-col-span-4" style="height: 80px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 100px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 90px;">span-4</div>
+                    <div class="g-col g-col-span-4" style="height: 110px;">span-4</div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <script>require('main');</script>
+</body>
+</html>

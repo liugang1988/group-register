@@ -1,0 +1,1 @@
+define("src/utils/loginFail",function(require,exports,module){"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=function(){location.origin.indexOf("group.")>=0?location.href="/login.html":alert("请重新登录！")},module.exports=exports["default"]});

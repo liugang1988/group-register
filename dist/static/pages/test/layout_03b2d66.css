@@ -1,0 +1,2 @@
+/*!src/pages/test/layout/index.less*/
+.demo .g-row{margin-bottom:20px}.demo .g-col{padding:20px 0;text-align:center;color:#fff}.demo .g-col:nth-child(odd){background:rgba(0,153,229,.7)}.demo .g-col:nth-child(even){background:rgba(0,153,229,.9)}

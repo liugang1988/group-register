@@ -1,0 +1,73 @@
+@import "../../components/ui/variable";
+@import "../../components/ui/mixin";
+.m-tip {
+    margin: 20px 0;
+    padding: 24px 40px;
+    color: @color-red;
+    border: 1px solid @color-gray2;
+    background-color: #fef9e9;
+}
+.m-box {
+    border: 1px solid #ccc;
+    background: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+//上传图片
+.m-form_upload {
+    display: inline-block;
+    max-width: 200px;
+    vertical-align: top;
+    margin-right: @spacing-small;
+    .upload-btn {
+        position: relative;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        background-color: @color-gray2;
+        border: 1px solid @color-gray3;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .2) inset;
+        input[type=file] {
+            position: absolute;
+            visibility: hidden;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+// 图片显示
+.m-form_img-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    height: 120px;
+    margin-right: @spacing-small;
+    img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+    .icon-close {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        font-size: 16px;
+        line-height: 1;
+        color: @color-black;
+        background-color: @color-white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .u-input-radio {
+        margin-top: 5px;
+        font-size: @font-size-base;
+        color: @color-gray1;
+    }
+}

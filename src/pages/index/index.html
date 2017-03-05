@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="import" href="../../components/head/index.tpl?__inline">
+</head>
+
+<body>
+    <div id="wrap">
+        <ui-header></ui-header>
+        <div class="g-in">
+            <template v-if="!isInit && currentStep">
+                <ui-bar :step="currentStep" :items="items"></ui-bar>
+                <ui-step-header :step="currentStep" :items="items"></ui-step-header>
+                <div class="m-tip" v-if="currentStep===errorStep"> 
+                    {{refuseReason}}，审核不通过。 
+                </div>
+                <component 
+                    :is="componentId"
+                    :error-step="errorStep===currentStep"
+                    :current-step="errorStep===currentStep"
+                    @next="next"></component>
+            </template>
+            <template v-else> 
+                正在加载... 
+            </template>
+        </div>
+    </div>
+    <script>
+        require('index');
+    </script>
+</body>
+
+</html>

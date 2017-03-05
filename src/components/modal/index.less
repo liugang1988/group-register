@@ -1,0 +1,54 @@
+@import "../ui/variable";
+@import "../ui/mixin";
+.m-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: @z-index-max;
+    overflow: auto;
+    // display: flex;
+    // align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 容器 */
+
+.m-modal__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    // overflow: auto;
+    border-radius: 10px;
+    background: @color-white;
+    transform: translateY(-50%);
+}
+
+.m-modal__hd {
+    padding: @spacing-base 20px;
+    font-size: 18px;
+    color: @color-black;
+    text-align: center;
+}
+
+.m-modal__bd {
+    padding: @spacing-base;
+    text-align: center;
+}
+
+.m-modal__ft {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid @color-gray2;
+}
+
+// 弹出框按钮
+.m-modal__btn {
+    &+& {
+        margin-left: 40px;
+    }
+}

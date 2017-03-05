@@ -1,0 +1,25 @@
+{
+    "b": {
+        "bizLicense":"11",
+        "legalCardFront":"22",
+        "legalCardRev":"33",
+        "contactCardHand":"44",
+        "contactCardFront":"33",
+        "contactCardRev":"33",
+        "organName":"33",
+        "groupName":"33",
+        "intro":"33",
+        "subjects":"33",
+        "featureSubject":"22",
+        "address":"",
+        "contactMail":"",
+        "legalPerson":"",
+        "legalPhone":"",
+        "telephone":"",
+        "chainCount":""
+    },
+    "h": {
+        "code": 200,
+        "msg": ""
+    }
+}

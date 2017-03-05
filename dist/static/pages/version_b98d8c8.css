@@ -1,0 +1,2 @@
+/*!src/pages/version/version.less*/
+.p-version{margin-top:20px;padding:40px 20px;border:1px solid #dadada;background-color:#fff}.p-version .title{font-size:24px;color:#000;text-align:center}.p-version .version-table{width:100%}.p-version .version-table td{border:2px solid #fff}.p-version .version-table thead td{padding:15px 0;text-align:center;font-size:18px;color:#fff;background-color:#488ae5}.p-version .version-table tbody td{padding:20px;background-color:#efefef}.p-version .version-table tbody td.clause{text-align:center;font-size:16px;color:#fff;background-color:#89b7f6}

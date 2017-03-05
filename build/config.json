@@ -1,0 +1,26 @@
+{
+    "dev": {
+        "domain": "//ofpbxsg82.qnssl.com",
+        "accessKey": "",
+        "secretKey": "",
+        "bucket": "runedu-fe"
+    },
+    "test": {
+        "domain": "//ofpbxsg82.qnssl.com",
+        "accessKey": "",
+        "secretKey": "",
+        "bucket": "runedu-fe"
+    },
+    "pre": {
+        "domain": "//ofpbxsg82.qnssl.com",
+        "accessKey": "",
+        "secretKey": "",
+        "bucket": "runedu-fe"
+    },
+    "pro": {
+        "domain": "//ofpbxsg82.qnssl.com",
+        "accessKey": "",
+        "secretKey": "",
+        "bucket": "runedu-fe"
+    }
+}

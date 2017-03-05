@@ -1,0 +1,68 @@
+@import "../../../components/ui/variable";
+@import "../../../components/ui/mixin";
+.p-header {
+    padding: 30px 40px;
+    overflow: hidden;
+    border: 1px solid @color-gray2;
+    background-color: @color-white;
+    position: relative;
+    &>h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: @color-black;
+    }
+    &:before {
+        content: '';
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        border-radius: 50%;
+        background-color: @color-primary;
+    }
+}
+
+.p-header--1 {
+    &:before {
+        background-image: url('images/1.png?__sprite');
+    }
+}
+
+.p-header--2 {
+    &:before {
+        background-image: url('images/2.png?__sprite');
+    }
+}
+
+.p-header--3 {
+    &:before {
+        background-image: url('images/3.png?__sprite');
+    }
+}
+
+.p-header--4 {
+    &:before {
+        background-image: url('images/4.png?__sprite');
+    }
+}
+
+.p-header--5 {
+    &:before {
+        background-image: url('images/5.png?__sprite');
+    }
+}
+
+.p-header--6 {
+    &:before {
+        background-image: url('images/6.png?__sprite');
+    }
+}
+
+.openSuccess {
+    font-size: 20px;
+    color: #666;
+    position: absolute;
+    right: 40px;
+    top: 55px;
+}

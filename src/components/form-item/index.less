@@ -1,0 +1,127 @@
+@import "../ui/variable";
+@import "../ui/mixin";
+.m-form-item__tips {
+    font-size: @font-size-small;
+    color: @color-gray3;
+    line-height: 20px;
+    height: 20px;
+}
+
+.m-form-item {
+    margin-bottom: 10px;
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .u-checkbox, .u-radio {
+        padding: 10px 0;
+    }
+    &.z-error {
+        .u-textarea, .u-input-text, .u-select {
+            border-color: @color-red;
+        }
+        .m-form-item__tips {
+            color: @color-red;
+            &:before {
+                display: inline-block;
+                font-family: 'runjiaoyu';
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                /* Better Font Rendering =========== */
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                content: '\e951';
+            }
+        }
+    }
+}
+
+.m-form-item__label {
+    display: inline-block;
+    .z-required & {
+        &:before {
+            content: "*";
+            vertical-align: middle;
+            font-weight: bold;
+            color: #fc7a22;
+        }
+    }
+}
+
+.m-form-item__text {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: @font-size-small;
+    color: @color-gray3;
+    &.z-error {
+        color: @color-green;
+    }
+    &.z-success {
+        color: @color-primary;
+    }
+}
+
+.m-form {
+    .w10 {
+        width: 9%;
+        margin-right: 1%;
+    }
+    .w20 {
+        width: 19%;
+        margin-right: 1%;
+    }
+    .w30 {
+        width: 29%;
+        margin-right: 1%;
+    }
+    .w40 {
+        width: 39%;
+        margin-right: 1%;
+    }
+    .w50 {
+        width: 49%;
+        margin-right: 1%;
+    }
+    .w60 {
+        width: 59%;
+        margin-right: 1%;
+    }
+    .w70 {
+        width: 69%;
+        margin-right: 1%;
+    }
+    .w80 {
+        width: 79%;
+        margin-right: 1%;
+    }
+    .w90 {
+        width: 89%;
+        margin-right: 1%;
+    }
+    .w100 {
+        width: 100%;
+    }
+}
+
+
+/* 布局 */
+
+.m-form--v {
+    .clearfix();
+    .m-form-item__label {
+        float: left;
+        width: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: right;
+    }
+    .m-form-item__bd {
+        margin-left: 100px;
+        // line-height: 40px;
+    }
+}

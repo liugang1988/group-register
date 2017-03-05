@@ -1,0 +1,15 @@
+{
+    "b": {
+        "accountBank": "1",
+        "accountName": "2",
+        "bankNO": "3",
+        "chainCount": "4",
+        "registerPrice": "5",
+        "technoPrice": "6",
+        "totalPrice": "7"
+    },
+    "h": {
+        "code": 200,
+        "msg": ""
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="import" href="../../../components/head/index.tpl?__inline">
+</head>
+<body>
+    <div id="app">
+        <h1>Toast</h1>
+
+        <ui-toast :visible="visible"
+            :type="type"
+            @close="onClosed">
+            {{text}}
+        </ui-toast>
+        <button @click="showText">文本消息</button>
+        <button @click="showSuccess">成功消息</button>
+        <button @click="showWarn">警告消息</button>
+        <button @click="showLoading">加载消息</button>
+    </div>
+
+    <script>require('main');</script>
+</body>
+</html>

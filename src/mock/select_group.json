@@ -1,0 +1,12 @@
+{
+    "b": [{
+        "groupId": 1,
+        "groupName": "1",
+        "organName": "公司1",
+        "status": 2
+    }],
+    "h": {
+        "code": 200,
+        "msg": ""
+    }
+}

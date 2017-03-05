@@ -1,0 +1,38 @@
+@import "../ui/variable";
+@import "../ui/mixin";
+.m-autocomplete {
+    position: relative;
+    display: inline-block;
+    .u-input-text {
+        width: 100%;
+    }
+}
+
+.m-autocomplete__items {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid @color-gray2;
+    border-radius: @radius-base;
+    background-color: @color-gray1;
+    max-height: 300px;
+    overflow: auto;
+    z-index: 99;
+}
+
+.m-autocomplete__item {
+    padding: 0 20px;
+    line-height: 30px;
+    cursor: pointer;
+    &:hover {
+        color: @color-white;
+        background-color: @color-gray2;
+    }
+    &.z-active {
+        color: @color-white;
+        background-color: @color-primary;
+    }
+}

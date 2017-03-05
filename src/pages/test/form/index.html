@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="import" href="../../../components/head/index.tpl?__inline">
+</head>
+
+<body>
+    <div id="app">
+        <h1>表单</h1>
+
+        <h2>radio</h2>
+        <ui-radio v-model="radio" :label="1">1</ui-radio>
+        <ui-radio v-model="radio" :label="2">2</ui-radio>
+
+        <h2>checkbox</h2>
+        <ui-checkbox v-model="checkbox" :label="1">1</ui-checkbox>
+        <ui-checkbox v-model="checkbox" :label="2">2</ui-checkbox>
+
+        <h2>默认布局</h2>
+        <ui-form>
+            <ui-form-item 
+                label="email" 
+                :tips="getErrorText($v.email.v,email.messages)"
+                :required="true">
+                <input 
+                    class="u-input-text w100"
+                    type="text" 
+                    placeholder="email" 
+                    @blur="$v.email.v.$touch()"
+                    @focus="$v.email.v.$reset()"
+                    v-model="email.v">
+            </ui-form-item>
+            <ui-form-item>
+                <ui-form-upload-img :items="pics"></ui-form-upload-img>
+            </ui-form-item>
+            <ui-form-item>
+                <ui-button type="primary" @click.native="$v.email.$touch">touch</ui-button>
+                <ui-button type="primary" @click.native="$v.email.$reset">reset</ui-button>
+            </ui-form-item>
+        </ui-form>
+    </div>
+
+    <script>
+        require('main');
+    </script>
+</body>
+
+</html>

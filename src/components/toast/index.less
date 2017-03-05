@@ -1,0 +1,44 @@
+@import "../ui/variable";
+@import "../ui/mixin";
+.m-toast {
+    z-index: @z-index-max;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 320px;
+    padding: @spacing-small @spacing-base;
+    text-align: center;
+    word-wrap: break-word;
+    color: white;
+    border-radius: @radius-large;
+    background: rgba(40, 40, 40, .75);
+    transform: translate(-50%, -50%);
+    [class^="icon-"], [class*=" icon-"] {
+        display: inline-block;
+        font-size: 40px;
+    }
+    .icon-success {
+        color: @color-green;
+    }
+    .icon-warn {
+        color: #f76260;
+    }
+    .icon-loading {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-bottom: @spacing-small;
+        line-height: 1;
+        color: @color-white;
+        animation: loading_normal 1.6s linear infinite;
+    }
+}
+
+@keyframes loading_normal {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,56 @@
+@import "../../../components/ui/variable";
+@import "../../../components/ui/mixin";
+.p-step6 {
+    .u-radio {
+        margin-right: 40px;
+    }
+    .pay-item {
+        padding: 30px 0;
+        border-bottom: 1px solid @color-gray2;
+    }
+    .zfb, .wx, .transfer {
+        display: inline-block;
+        width: 122px;
+        height: 42px;
+        line-height: 42px;
+        vertical-align: middle;
+        color: @color-black;
+        text-align: center;
+        border: 1px solid @color-gray2;
+        background-color: @color-white;
+    }
+    .zfb {
+        background-image: url('images/z.png?__sprite');
+    }
+    .wx {
+        background-image: url('images/w.png?__sprite');
+    }
+    .pay-infor {
+        float: right;
+        text-align: right;
+        .f-c-gray {
+            color: @color-gray3;
+        }
+        .f-c-black {
+            color: @color-black;
+        }
+        .f-big {
+            font-size: 18px;
+        }
+        .price {
+            font-size: 30px;
+            color: #f4523b;
+        }
+    }
+    .upload-btn {
+        width: 270px;
+        height: 200px;
+        margin-top: 60px;
+        line-height: @line-height-small;
+        .icon-add2 {
+            margin-top: 50px;
+            font-size: 40px;
+            color: @color-gray3;
+        }
+    }
+}

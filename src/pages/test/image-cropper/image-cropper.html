@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="import" href="../../../components/head/index.tpl?__inline">
+</head>
+
+<body>
+    <div id="wrap">
+        <div v-if='!isSet'>
+            <button @click="isSet=true">重新设置</button>
+            <ui-image-cropper 
+                :target-width="width||0" 
+                :target-height="height||0" 
+                :image-type="types" 
+                :max-size="maxSize" 
+                :compress-size="compressSize" 
+                @on-error="error" @on-success="success">
+            </ui-image-cropper>
+        </div>
+        <div v-else>
+            <label>
+                图片格式：<input type="text" v-model="types">多种格式用空格分割
+            </label>
+            <label>
+                宽度：<input type="text" v-model="width">如果不设置，表示不限制
+            </label>
+            <label>
+                高度：<input type="text" v-model="height">如果不设置，表示不限制
+            </label>
+            <label>
+                上传大小：<input type="text" v-model="maxSize">单位b，默认2*1024*1024b
+            </label>
+            <label>
+                压缩大小：<input type="text" v-model="compressSize">单位b，默认100*1024b
+            </label>
+            <button @click="isSet=false">设置</button>
+        </div>
+    </div>
+    <script>
+        require('image-cropper.js');
+    </script>
+</body>
+</html>

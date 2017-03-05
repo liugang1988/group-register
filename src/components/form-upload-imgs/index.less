@@ -1,0 +1,57 @@
+@import "../ui/variable";
+@import "../ui/mixin";
+.m-form-upload-imgs {
+    .upload {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        background-color: @color-gray1;
+        border: 1px solid @color-gray2;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .2) inset;
+        .upload-label{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+    .img {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 120px;
+        height: 120px;
+        margin-right: @spacing-small;
+        img {
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+        }
+        .percent {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: @color-primary;
+            opacity: 0.5;
+        }
+        .icon-close {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            font-size: 16px;
+            line-height: 1;
+            color: @color-black;
+            background-color: @color-white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}

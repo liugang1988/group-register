@@ -1,0 +1,50 @@
+{
+    "name": "runedu-group-register",
+    "version": "1.0.0",
+    "description": "机构管理平台-加盟",
+    "author": "redwing team",
+    "scripts": {
+        "stop": "fis3 server stop && fis3 server clean",
+        "server": "fis3 server stop && fis3 server clean && fis3 server start",
+        "debug": "fis3 release --verbose -wLc -f build/fis-conf-debug.js -r ./",
+        "prod": "fis3 release --verbose -cd ./dist -f build/fis-conf-prod.js -r ./ && npm run upload",
+        "upload": "node build/upload.qiniu.js",
+        "tag": "bash build/tag.sh"
+    },
+    "engines": {
+        "node": ">= 6.0.0"
+    },
+    "devDependencies": {
+        "qiniu_cdn_upload": "^0.0.1",
+        "autoprefixer": "^6.3.7",
+
+        "babel-core": "^6.18.0",
+        "babel-eslint": "^7.1.0",
+        "babel-preset-es2015": "^6.18.0",
+        "babel-preset-stage-2": "^6.18.0",
+
+        "eslint": "^3.1.1",
+        "eslint-plugin-html": "^1.4.0",
+        "eslint-plugin-import": "^2.0.1",
+        "eslint-config-airbnb-base": "^9.0.0",
+
+        "fis3": "^3.4.17",
+        "fis-parser-less": "^0.1.3",
+        "fis-optimizer-rjy-html-minifier": "^0.0.1",
+        "fis-postprocessor-rjy-postcss": "^0.1.1",
+        "fis3-preprocessor-define": "^1.1.0",
+        "fis3-postpackager-loader": "^2.0.5",
+        "fis3-hook-commonjs": "^0.1.25",
+        "fis3-hook-node_modules": "^2.2.7",
+        "fis-parser-babel-6.x": "^6.20.0"
+    },
+    "dependencies": {
+        "plupload_2.1.9": "",
+        "qiniu-js":"1.0.14-beta",
+        "vue": "^2.1.6",
+        "axios": "^0.15.3",
+        "es6-promise": "^4.0.5",
+        "vuelidate": "^0.2.0",
+        "spark-md5": "^2.0.2"
+    }
+}

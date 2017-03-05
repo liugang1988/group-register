@@ -1,0 +1,1 @@
+define("src/components/form/index",function(require,exports,module){"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]={template:'<div class="m-form" :class="className"><slot></slot></div>',props:{type:String},computed:{className:function(){var a=this.type;return"v"===a?"m-form--v":""}}},module.exports=exports["default"]});

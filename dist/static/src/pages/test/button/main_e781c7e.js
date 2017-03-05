@@ -1,0 +1,1 @@
+define("src/pages/test/button/main",function(require){"use strict";function a(a){return a&&a.__esModule?a:{"default":a}}var c=require("node_modules/vue/dist/vue"),v=a(c),_=require("src/components/button/index"),b=a(_);new v.default({el:"#app",components:{uiButton:b.default}})});

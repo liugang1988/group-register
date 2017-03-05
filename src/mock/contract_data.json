@@ -1,0 +1,20 @@
+{
+    "b": {
+        "organCode": "",
+        "groupName": "",
+        "brandName": "",
+        "address": "",
+        "telephone": "",
+        "contactName": "",
+        "legalPerson": "",
+        "identityCard": "",
+        "registerPrice": "",
+        "techPrice": "",
+        "dealServiceCharges": "",
+        "dealFormalCharges": ""
+    },
+    "h": {
+        "code": 200,
+        "msg": ""
+    }
+}

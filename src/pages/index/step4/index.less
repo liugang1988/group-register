@@ -1,0 +1,31 @@
+@import "/src/components/ui/variable";
+@import "/src/components/ui/mixin";
+.m-form {
+    margin: -20px 0;
+}
+
+.m-form-item {
+    margin-bottom: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid @color-gray2;
+    &:last-child {
+        border-bottom: 0;
+    }
+    .m-form-item__label {
+        color: @color-gray3;
+    }
+}
+
+.certificate {
+    float: left;
+    width: 120px;
+    position: relative;
+    text-align: center;
+    img {
+        display: block;
+        margin: 0 auto 10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+}

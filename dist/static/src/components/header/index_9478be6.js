@@ -1,0 +1,1 @@
+define("src/components/header/index",function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default={template:'<header class="m-header"><div class="g-in">润教育联盟运营管理平台</div></header>'}});

@@ -1,0 +1,1 @@
+define("src/components/icon/index",function(require,exports){"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default={template:"<i :class='\"icon-\"+name'></i>",props:["name"]}});

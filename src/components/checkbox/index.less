@@ -1,0 +1,40 @@
+@import "../ui/variable";
+@import "../ui/mixin";
+.u-checkbox {
+    display: inline-block;
+    cursor: pointer;
+    &:before {
+        display: inline-block;
+        // height: 1em * @line-height-small;
+        margin-right: 3px;
+        font-family: 'runjiaoyu';
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e916";
+        text-align: center;
+        color: @color-gray3;
+        background-color: @color-white;
+    }
+    input {
+        position: absolute;
+        visibility: hidden;
+    }
+    &.z-checked {
+        &:before {
+            content: "\e915";
+            color: @color-primary;
+        }
+    }
+    &.z-disabled {
+        color: @color-gray3;
+        &:before {
+            color: lighten(@color-gray3, 20%);
+            background-color: @color-white;
+        }
+    }
+}

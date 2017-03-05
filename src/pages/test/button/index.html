@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="import" href="../../../components/head/index.tpl?__inline">
+</head>
+<body>
+    <div id="app">
+        <h1>按钮</h1>
+
+        <h2>类型</h2>
+
+        <ui-button>Default</ui-button>
+        <ui-button type="primary">Primary</ui-button>
+        <ui-button type="danger">Danger</ui-button>
+        <ui-button type="link">link</ui-button>
+
+        <br>
+        <br>
+
+        <ui-button :plain="true">Default</ui-button>
+        <ui-button :plain="true" type="primary">Primary</ui-button>
+        <ui-button :plain="true" type="danger">Danger</ui-button>
+        <ui-button :plain="true" type="link">link</ui-button>
+
+        <h2>禁用</h2>
+
+        <ui-button :disabled="true" >Default</ui-button>
+        <ui-button :disabled="true"  type="primary">Primary</ui-button>
+        <ui-button :disabled="true"  type="danger">Danger</ui-button>
+        <ui-button :disabled="true"  type="link">link</ui-button>
+
+        <br>
+        <br>
+
+        <ui-button :disabled="true" :plain="true">Default</ui-button>
+        <ui-button :disabled="true" :plain="true" type="primary">Primary</ui-button>
+        <ui-button :disabled="true" :plain="true" type="danger">Danger</ui-button>
+        <ui-button :disabled="true" :plain="true" type="link">link</ui-button>
+
+        <h2>尺寸</h2>
+
+        <ui-button size="big">Big</ui-button>
+        <ui-button>Default</ui-button>
+        <ui-button type="small">Small</ui-button>
+
+        <h2>图标</h2>
+
+        <ui-button icon="forward">forward</ui-button>
+        <ui-button icon="forward"></ui-button>
+
+        <h2>加载</h2>
+
+        <ui-button :loading="true">Loading</ui-button>
+
+        <h2>按钮组</h2>
+
+        尚未完成
+    </div>
+
+    <script>require('main');</script>
+</body>
+</html>

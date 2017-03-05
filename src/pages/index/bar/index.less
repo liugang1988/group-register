@@ -1,0 +1,67 @@
+@import "../../../components/ui/variable";
+@import "../../../components/ui/mixin";
+.m-step {
+    overflow: hidden;
+    .step-item {
+        float: left;
+        width: (100/6)*1%;
+        font-size: 18px;
+        color: @color-black;
+        &>.flag {
+            position: relative;
+            margin-top: 30px;
+            border-bottom: 2px solid #cdcdcd;
+            z-index: 2;
+            &:before {
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                width: 20px;
+                height: 20px;
+                content: '';
+                margin-left: -10px;
+                border: 3px solid #cdcdcd;
+                border-radius: 50%;
+                background-color: @color-white;
+                z-index: 3;
+            }
+        }
+        &:first-child {
+            .flag {
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 0;
+                    content: '';
+                    border-bottom: 2px solid @color-white;
+                    z-index: 1;
+                }
+            }
+        }
+        &:last-child {
+            .flag {
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 0;
+                    content: '';
+                    border-bottom: 2px solid @color-white;
+                    z-index: 1;
+                }
+            }
+        }
+        &.z-active {
+            color: @color-primary;
+            .flag {
+                border-color: @color-primary;
+                &:before {
+                    border-color: @color-primary;
+                }
+            }
+        }
+    }
+}
